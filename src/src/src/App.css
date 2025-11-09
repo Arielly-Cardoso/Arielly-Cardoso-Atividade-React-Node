@@ -1,0 +1,82 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+}
+
+/* Estilos para o container principal do componente do gato */
+.cat-display-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Estilos para a caixa da imagem */
+.cat-image-box {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden; /* Garante que a imagem se ajuste ao container */
+}
+
+/* Estilo da imagem */
+.cat-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+.image-info {
+  font-size: 0.9em;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* Estilos para o botão */
+.next-image-button {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  color: white;
+  background-color: #007bff; /* Azul primário */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.next-image-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para quando o botão está desabilitado (carregando) */
+.next-image-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Estilos para mensagens */
+.loading-message {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.error-message {
+  color: #dc3545; /* Vermelho para erro */
+  font-weight: bold;
+  border: 1px solid #dc3545;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px 0;
+}
